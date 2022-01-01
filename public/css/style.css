@@ -1,0 +1,180 @@
+/* Universal Settings */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Color Themes */
+
+.theme-light {
+  --primary-color: rgb(48, 93, 189);
+  --secondary-color: rgb(184, 184, 184);
+  --bg-color: rgb(224, 224, 224);
+  --text: rgb(0, 0, 0);
+}
+
+.theme-dark {
+  --primary-color: rgb(252, 163, 17);
+  --secondary-color: rgb(51, 51, 51);
+  --bg-color: rgb(10, 10, 10);
+  --text: rgb(255, 255, 255);
+}
+
+/* General Elements */
+
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 20px 'Courier New', Courier, monospace;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background: var(--bg-color);
+  transition: all 0.2s;
+  color: var(--text);
+}
+
+section.box-1, section.box-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 1rem;
+  background: var(--secondary-color);
+  transition: background-color 0.2s;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+section#box-4 {
+  flex-direction: row;
+}
+
+section.box-2, section.box-3 {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  min-width: 24rem;
+  padding: 1rem 1rem;
+  background: var(--secondary-color);
+  transition: background-color 0.2s;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+section#box-3 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* Text Elements */
+
+h1 {
+  font-size: 2rem;
+  grid-column: 1 / -1;
+  margin: 0;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+li:first-child {
+  font-weight: bold;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+
+/* Link Elements */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+p:hover {
+  cursor: pointer;
+}
+
+/* DuckDuckGo Search Bar */
+
+form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+form input {
+  background: inherit;
+  border: none;
+  font: inherit;
+  width: 100%;
+  color: var(--text);
+}
+
+form input:focus::placeholder {
+  color: transparent;
+}
+
+form input:focus {
+  outline: none;
+  color: var(--text);
+}
+
+/* Clock Customization */
+
+#clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#date {
+  text-align: center;
+}
+
+#time {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Dark Mode Toggle Button */
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+svg {
+  height: 23px;
+  width: 23px;
+  text-decoration: none;
+}
+
+svg#dark:hover {
+  cursor: pointer;
+}
