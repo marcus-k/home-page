@@ -10,20 +10,31 @@ Obvious heavy visual inspiration from [alanrey6](https://github.com/alanrey6/sta
 
 [Node.js](https://nodejs.org/en/) is needed to run the HTTP server. I tested it with the [WSL2 version](https://docs.microsoft.com/en-ca/windows/dev-environment/javascript/nodejs-on-wsl).
 
-First, install the packages in the environment.
-```bash
-npm install
-```
 To enable weather functionality, a `.env` file needs to be created in the root directory with an OpenWeatherMap API key along with a [location](https://www.latlong.net/). One can paste the necessary values into the `.env.sample` file then remove `.sample` from the filename.
 
 Web links, located in `/public/js/config.js`, can be customized to whatever one desires.
 
-Finally, to start the web server:
+Install the packages in the environment with:
+```bash
+npm install
+```
+
+To start the web server:
 ```bash
 node app.js
 ```
 
 ## Docker Setup
+
+The `.env` file and web links should be setup in the same manner as the [manual setup](#manual-setup). Then, the docker image can be build using:
+```bash
+docker build . -t <your username>/homepage
+```
+
+To run the container:
+```bash
+docker run -p 8080:8080 -d --name homepage <your username>/homepage
+```
 
 
 ## Other Links to Read

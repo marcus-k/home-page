@@ -22,7 +22,12 @@ app.get("/*", (req, res) => {
 
 // Start server
 const server = app.listen(port, () => {
-    console.log(`Running on port ${port}`);
     var host = server.address().address;
     console.log("Home page listening at http://%s:%s", host, port);
+});
+
+// Watch for termination signal (usually from Docker)
+process.on('SIGTERM', () => {
+    console.info("Termination signal received.\n");
+    process.exit(0);
 });

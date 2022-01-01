@@ -1,0 +1,7 @@
+Dockerfile
+*.md
+.git
+.gitignore
+*.sample
+node_modules
+screenshots
