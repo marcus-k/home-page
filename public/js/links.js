@@ -17,10 +17,18 @@ for (var i = 0; i < links.length; i++){
         // Create <li> element
         let listItem = document.createElement("li");
 
+        // Create <img> element
+        let icon = document.createElement("img");
+        if (links[i].links[j].icon) {
+            icon.src = links[i].links[j].icon;
+            icon.className = "icon";
+        }
+
         // Create <a> element, add to <li>
         let linkItem = document.createElement("a");
         linkItem.href = links[i].links[j].href;
         linkItem.target = links[i].links[j].target;
+        linkItem.appendChild(icon)
         linkItem.appendChild(document.createTextNode(
             links[i].links[j].content
         ));

@@ -12,7 +12,7 @@ Obvious heavy visual inspiration from [alanrey6](https://github.com/alanrey6/sta
 
 To enable weather functionality, a `.env` file needs to be created in the root directory with an OpenWeatherMap API key along with a [location](https://www.latlong.net/). One can paste the necessary values into the `.env.sample` file then remove `.sample` from the filename.
 
-Web links, located in `/public/js/config.js`, can be customized to whatever one desires.
+Web links, located in `/public/js/config.js`, can be customized to whatever one desires. See [below](#web-link-config) for config details.
 
 Install the packages in the environment with:
 ```bash
@@ -35,6 +35,34 @@ To run the container:
 ```bash
 docker run -p 8080:8080 -d --name homepage <your username>/homepage
 ```
+
+## Web Link Config
+
+Each link entry in `/public/js/config.js` has two attributes: the column name and a list of web links.
+```
+{
+    name: "Admin",
+    links: [
+        {
+            href: "",
+            target: "_blank",
+            content: "Portainer",
+            icon: "https://i.imgur.com/729Hh3P.png"
+        },
+        {
+            href: "",
+            target: "_blank",
+            content: "Pi-hole",
+            icon: "https://pi-hole.github.io/graphics/Vortex/Vortex_with_Wordmark.svg"
+        },
+    ]
+}
+```
+- `href` is the web address to link to.
+- `target` specified where to open the link.
+- `content` is the displayed text.
+- `icon` is the local or remote icon image location.
+
 
 
 ## Other Links to Read
