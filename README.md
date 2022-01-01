@@ -26,7 +26,7 @@ node app.js
 
 ## Docker Setup
 
-The `.env` file and web links should be setup in the same manner as the [manual setup](#manual-setup). Then, the docker image can be build using:
+The `.env` file and web links should be setup in the same manner as the [manual setup](#manual-setup). Then, the docker image can be built using:
 ```bash
 docker build . -t <your username>/homepage
 ```
@@ -38,9 +38,9 @@ docker run -p 8080:8080 -d --name homepage <your username>/homepage
 
 
 ## Other Links to Read
-- [https://stpg.tk/guides/basic-startpage/]()
-- [https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics]()
-- [https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics]()
-- [https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics]()
-- [https://gist.github.com/jkrems/b14894e0b8efde10aa10a28c652d3541]()
-- [https://nodejs.org/en/docs/guides/nodejs-docker-webapp/]()
+- [https://stpg.tk/guides/basic-startpage/](https://stpg.tk/guides/basic-startpage/)
+- [https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
+- [https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
+- [https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+- [https://gist.github.com/jkrems/b14894e0b8efde10aa10a28c652d3541](https://gist.github.com/jkrems/b14894e0b8efde10aa10a28c652d3541)
+- [https://nodejs.org/en/docs/guides/nodejs-docker-webapp/](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
