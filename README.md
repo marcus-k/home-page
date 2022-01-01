@@ -1,5 +1,10 @@
 # Home Page
-Very first home page to teach myself the basics of how to use HTML, CSS, JavaScript, and Node.js. Before this, I had no knowledge of any web development. Heavy visual inspiration from [alanrey6](https://github.com/alanrey6/startpage-az). Many tweaks, comments, and changes were made just about everywhere other than the visuals. I basically wanted to improve his version and learn how to make it myself, while customizing it to my needs and adding a way to deploy it using Express.js through docker.  This repository will essentially be my notes on how it works and to run it.
+Very first home page to teach myself the basics of how to use HTML, CSS, JavaScript, and Node.js. Before this, I had no knowledge of any web development. 
+
+![](screenshots/screenshot.png)
+
+
+Obvious heavy visual inspiration from [alanrey6](https://github.com/alanrey6/startpage-az). Many tweaks, comments, and changes were made just about everywhere to theirs other than the visuals. I basically wanted to improve his version and learn how to make it myself, while customizing it to my needs and adding a way to deploy it using Express.js through docker.  This repository will essentially be my notes on how it works and to run it.
 
 ## Manual Setup
 
@@ -9,7 +14,7 @@ First, install the packages in the environment.
 ```bash
 npm install
 ```
-To enable weather functionality, a `.env` file needs to be created in the root directory with an OpenWeatherMap API key along with a location. One can paste the necessary values into the `.env.sample` file then remove `.sample` from the filename.
+To enable weather functionality, a `.env` file needs to be created in the root directory with an OpenWeatherMap API key along with a [location](https://www.latlong.net/). One can paste the necessary values into the `.env.sample` file then remove `.sample` from the filename.
 
 Web links, located in `/public/js/config.js`, can be customized to whatever one desires.
 
