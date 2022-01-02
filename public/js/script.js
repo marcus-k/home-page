@@ -121,7 +121,7 @@ const getWeatherData = async function () {
                     ${data.daily[1].weather[0].description}
                 </li>
                 <li>
-                    Now: ${Math.round(data.daily[1].temp.day)}॰C
+                    Day: ${Math.round(data.daily[1].temp.day)}॰C
                 </li>
                 <li>
                     High: ${Math.round(data.daily[1].temp.max)}॰C

@@ -38,7 +38,7 @@ docker run -p 8080:8080 -d --name homepage <your username>/homepage
 
 ## Web Link Config
 
-Each link entry in `/public/js/config.js` has two attributes: the column name and a list of web links.
+Each entry in `/public/js/config.js` has two attributes: the column name and a list of web links.
 ```
 {
     name: "Admin",
@@ -59,7 +59,7 @@ Each link entry in `/public/js/config.js` has two attributes: the column name an
 }
 ```
 - `href` is the web address to link to.
-- `target` specified where to open the link.
+- `target` specifies where to open the link.
 - `content` is the displayed text.
 - `icon` is the local or remote icon image location.
 
