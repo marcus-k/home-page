@@ -16,24 +16,32 @@ Web links, located in `/public/js/config.js`, can be customized to whatever one 
 
 Install the packages in the environment with:
 ```bash
-npm install
+$ npm install
 ```
 
 To start the web server:
 ```bash
-node app.js
+$ node app.js
 ```
 
 ## Docker Setup
 
 The `.env` file and web links should be setup in the same manner as the [manual setup](#manual-setup). Then, the docker image can be built using:
 ```bash
-docker build . -t <your username>/homepage
+$ docker build . -t marcus/homepage
 ```
 
 To run the container:
 ```bash
-docker run -p 8080:8080 -d --name homepage <your username>/homepage
+$ docker run -p 8080:8080 -d --name homepage marcus/homepage
+```
+
+## Docker-Compose Setup
+
+An example docker-compose file is also provided to use instead of the docker CLI. To build and run:
+```bash
+$ docker-compose build
+$ docker-compose up -d
 ```
 
 ## Web Link Config
