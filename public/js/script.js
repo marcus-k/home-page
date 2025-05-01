@@ -7,26 +7,27 @@ let darkMode = localStorage.getItem("darkMode");
 const enableDarkMode = () => {
     document.querySelector("body").classList.remove("theme-light");
     document.querySelector("body").classList.add("theme-dark");
-    localStorage.setItem("darkMode", "enabled");
+    localStorage.setItem("darkMode", null);
 };
 
 // Toggle off dark mode
 const disableDarkMode = () => {
     document.querySelector("body").classList.remove("theme-dark");
     document.querySelector("body").classList.add("theme-light");
-    localStorage.setItem("darkMode", null);
+    localStorage.setItem("darkMode", "disabled");
 };
 
 // Activate dark mode
-if (darkMode === "enabled")
-    enableDarkMode();
-else
+if (darkMode === "disabled")
     disableDarkMode();
+else
+    enableDarkMode();
+    
 
 // Add event listener to the #dark SVG icon to toggle dark mode
 document.getElementById("dark").addEventListener("click", () => {
     darkMode = localStorage.getItem("darkMode");
-    darkMode !== "enabled" ? enableDarkMode() : disableDarkMode();
+    darkMode !== "disabled" ? disableDarkMode() : enableDarkMode();
 });
 
 
