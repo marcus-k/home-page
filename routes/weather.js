@@ -10,7 +10,7 @@ const lat = process.env.LATITUDE
 const lon = process.env.LONGITUDE
 
 router.get("/", (req, res) => {
-    let url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly,minutely&appid=${API_KEY}&units=metric`
+    let url = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&exclude=hourly,minutely&appid=${API_KEY}&units=metric`
 
     // Call OpenWeatherMap API
     fetch(url)
